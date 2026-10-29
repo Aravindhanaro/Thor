@@ -1,0 +1,30 @@
+
+version: 2
+
+models:
+    - name: Orders
+      description: "A starter dbt model"
+      columns:
+          - name: order_id
+            description: "This our dbt model table"
+            tests:
+                - unique
+                - not_null
+
+    - name: Customers
+      description: "A starter dbt model"
+      columns:
+          - name: customer_id
+            description: "This our dbt model table"
+            tests:
+                - unique
+                - not_null
+
+    - name: Products
+      description: "A starter dbt model"
+      columns:
+          - name: product_id
+            description: "This our dbt model table"
+            tests:
+                - unique
+                - not_null
