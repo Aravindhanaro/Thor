@@ -9,8 +9,8 @@ renamed as (
         product_id,
         quantity,
         total_amount,
+        -- Make sure this alias is exactly 'order_date_utc'
         order_date as order_date_utc,
-        -- cleaning statuses to lowercase for uniformity
         lower(status) as order_status
     from source
 )
